@@ -251,9 +251,9 @@ NeuroPulse-AI/
 
 ---
 
-# 🧩 Frontend Architecture
+# 🧩 Basic Architecture
 
-![Frontend Structure](screenshots/frontend_structure.png)
+![Frontend Structure](screenshots/basic_structure.png)
 
 ---
 
