@@ -1,0 +1,6 @@
+email,reminder_type,schedule_time,template_name,recurring
+sujal@example.com,Webinar Reminder,2026-05-10 18:00:00,reminder_template.html,Yes
+rahul@example.com,Interview Reminder,2026-05-10 19:00:00,welcome_template.html,No
+priya@example.com,Payment Reminder,2026-05-11 10:00:00,payment_template.html,Yes
+ankit@example.com,Task Reminder,2026-05-11 14:00:00,reminder_template.html,No
+riya@example.com,Marketing Campaign,2026-05-12 11:00:00,welcome_template.html,Yes

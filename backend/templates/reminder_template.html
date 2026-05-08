@@ -1,0 +1,51 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #4A90E2;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: gray;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hello {{name}},</h2>
+
+        <p>
+            This is your scheduled reminder regarding:
+            <strong>{{reminder_type}}</strong>
+        </p>
+
+        <p>
+            Scheduled Time:
+            <strong>{{schedule_time}}</strong>
+        </p>
+
+        <p>
+            Please make sure to complete the required action.
+        </p>
+
+        <div class="footer">
+            Email Automation & Reminder System
+        </div>
+    </div>
+</body>
+</html>
