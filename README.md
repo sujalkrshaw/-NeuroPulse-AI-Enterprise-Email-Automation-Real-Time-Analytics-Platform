@@ -271,27 +271,41 @@ Unlike basic student dashboards, this platform simulates:
 
 # 📸 Screenshots
 
-## 🖥️ Dashboard
+---
 
-_Add screenshot here_
+## 🖥️ Enterprise Dashboard
+
+![Dashboard](screenshots/dashboards.png)
 
 ---
 
-## 📊 Analytics
+## 👥 Contact Management System
 
-_Add screenshot here_
-
----
-
-## 👥 Contacts
-
-_Add screenshot here_
+![Contacts](screenshots/contact.png)
 
 ---
 
-## ⏰ Reminder Scheduler
+## 📊 Enterprise Analytics
 
-_Add screenshot here_
+![Analytics](screenshots/enterprise_analysis.png)
+
+---
+
+## ⚡ Live Automation Monitoring
+
+![Automation](screenshots/live_automation.png)
+
+---
+
+## ⏰ AI Reminder Scheduler
+
+![Reminder](screenshots/reminder.png)
+
+---
+
+## 🏗️ Project Structure
+
+![Structure](screenshots/structure.png)
 
 ---
 
