@@ -16,6 +16,10 @@ from src.logger import (
     failed_logger
 )
 
+from src.database import SessionLocal
+
+from src.models import EmailEvent
+
 
 class EmailSender:
 
@@ -27,6 +31,41 @@ class EmailSender:
         self.user = SMTP_USER
         self.password = SMTP_PASS
 
+    # -----------------------------------
+    # STORE EMAIL EVENT
+    # -----------------------------------
+
+    def store_event(
+        self,
+        recipient_email,
+        subject,
+        status,
+        error_message=None
+    ):
+
+        db = SessionLocal()
+
+        event = EmailEvent(
+
+            recipient_email=recipient_email,
+
+            subject=subject,
+
+            status=status,
+
+            error_message=error_message
+        )
+
+        db.add(event)
+
+        db.commit()
+
+        db.close()
+
+    # -----------------------------------
+    # SEND EMAIL
+    # -----------------------------------
+
     def send_email(
         self,
         recipient_email,
@@ -34,9 +73,9 @@ class EmailSender:
         html_content
     ):
 
-        # -------------------------
+        # -----------------------------------
         # DRY RUN MODE
-        # -------------------------
+        # -----------------------------------
 
         if DRY_RUN:
 
@@ -54,18 +93,28 @@ class EmailSender:
                 f"DRY RUN SUCCESS -> {recipient_email}"
             )
 
+            # STORE EVENT
+
+            self.store_event(
+                recipient_email,
+                subject,
+                "SUCCESS"
+            )
+
             return True
 
-        # -------------------------
+        # -----------------------------------
         # REAL SMTP MODE
-        # -------------------------
+        # -----------------------------------
 
         try:
 
             message = MIMEMultipart()
 
             message["From"] = self.user
+
             message["To"] = recipient_email
+
             message["Subject"] = subject
 
             message.attach(
@@ -96,15 +145,33 @@ class EmailSender:
                 f"SENT -> {recipient_email}"
             )
 
+            # STORE SUCCESS EVENT
+
+            self.store_event(
+                recipient_email,
+                subject,
+                "SUCCESS"
+            )
+
             return True
 
         except Exception as e:
 
             print(f"❌ Failed -> {recipient_email}")
+
             print(e)
 
             failed_logger.error(
                 f"FAILED -> {recipient_email} -> {e}"
+            )
+
+            # STORE FAILED EVENT
+
+            self.store_event(
+                recipient_email,
+                subject,
+                "FAILED",
+                str(e)
             )
 
             return False

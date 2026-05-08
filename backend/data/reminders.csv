@@ -1,6 +1,23 @@
 email,reminder_type,schedule_time,template_name,recurring
-sujal@example.com,Webinar Reminder,2026-05-10 18:00:00,reminder_template.html,Yes
-rahul@example.com,Interview Reminder,2026-05-10 19:00:00,welcome_template.html,No
-priya@example.com,Payment Reminder,2026-05-11 10:00:00,payment_template.html,Yes
-ankit@example.com,Task Reminder,2026-05-11 14:00:00,reminder_template.html,No
-riya@example.com,Marketing Campaign,2026-05-12 11:00:00,welcome_template.html,Yes
+sujalshaw.work@gmail.com,Daily Study Reminder,2026-05-09 08:00:00,reminder_template.html,Yes
+aarav.mehta.hr@gmail.com,HR Interview Reminder,2026-05-09 10:30:00,reminder_template.html,No
+priya.finance.team@gmail.com,Monthly Budget Submission,2026-05-09 11:00:00,payment_template.html,Yes
+ankit.supportdesk@gmail.com,System Maintenance Alert,2026-05-09 13:00:00,reminder_template.html,Yes
+riya.marketing.pro@gmail.com,Campaign Launch Reminder,2026-05-09 15:00:00,welcome_template.html,No
+arjun.educationhub@gmail.com,Online Workshop Reminder,2026-05-09 17:00:00,reminder_template.html,Yes
+neha.admin.services@gmail.com,Admin Team Meeting,2026-05-10 09:00:00,reminder_template.html,Yes
+vikram.saleslead@gmail.com,Sales Follow-up Reminder,2026-05-10 10:00:00,reminder_template.html,Yes
+pooja.operations.team@gmail.com,Operations Daily Review,2026-05-10 12:00:00,reminder_template.html,Yes
+aman.hr.alerts@gmail.com,Recruitment Deadline Alert,2026-05-10 14:00:00,reminder_template.html,No
+sneha.projectmanager@gmail.com,Project Sprint Review,2026-05-10 16:00:00,reminder_template.html,Yes
+rahul.analytics.ai@gmail.com,Analytics Report Submission,2026-05-10 18:00:00,reminder_template.html,Yes
+tanya.customer.success@gmail.com,Customer Feedback Review,2026-05-11 09:30:00,welcome_template.html,No
+karan.devops.team@gmail.com,Server Health Monitoring,2026-05-11 11:00:00,reminder_template.html,Yes
+ishita.content.team@gmail.com,Content Publishing Reminder,2026-05-11 13:00:00,reminder_template.html,Yes
+dev.cybersec@gmail.com,Security Audit Reminder,2026-05-11 15:00:00,reminder_template.html,Yes
+nikita.events.team@gmail.com,Event Coordination Alert,2026-05-11 17:00:00,welcome_template.html,No
+rohan.recruitment@gmail.com,Candidate Follow-up Reminder,2026-05-12 10:00:00,reminder_template.html,Yes
+meera.businessops@gmail.com,Business Operations Sync,2026-05-12 12:00:00,reminder_template.html,Yes
+aditya.clientservices@gmail.com,Client Presentation Reminder,2026-05-12 16:00:00,reminder_template.html,No
+SURAJ_1@GMAIL.COM,Meeting Reminder,2026-05-08 16:39:00,reminder_template.html,Yes
+HVTYICPU8G97UIN.GMAILCOM,Meeting Reminder,2026-05-08 16:56:00,reminder_template.html,Yes
